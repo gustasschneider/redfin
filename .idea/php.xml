@@ -15,6 +15,7 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-mail" />
       <path value="$PROJECT_DIR$/vendor/endroid/qrcode" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-stdlib" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

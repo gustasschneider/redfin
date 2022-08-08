@@ -17,6 +17,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-mail" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/endroid/qrcode" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/zendframework/zend-stdlib" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twbs/bootstrap" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

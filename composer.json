@@ -1,5 +1,6 @@
 {
 	"require":{
-		"nfephp-org/nfephp":"^4.0"
+		"nfephp-org/nfephp":"^4.0",
+		"twbs/bootstrap": "5.2.0"
 	}
 }
