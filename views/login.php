@@ -22,12 +22,21 @@ require_once ('inc/scripts.php');
                     <label for="floatingPassword">Digite sua senha</label>
                 </div>
                 <br>
-                <button class="w-100 btn btn-lg btn-danger" type="submit">Entrar</button>
+                <button class="w-100 btn btn-lg btn-danger" type="submit" style="margin:0;">
+                    Entrar
+                </button>
                 <p class="mt-5 mb-3 text-muted text-center">© Redfin - 2022</p>
-
-        		<?php if(isset($error) && !empty($error)): ?>
-        		<div class="warning"><?php echo $error; ?></div>
+        		<?php if(isset($viewData['statusRetorno']) && $viewData['statusRetorno'] == '0'): ?>
+                    <div class="alert alert-danger alert-dismissible fade show text-center" role="alert">
+                        <?= $viewData['textoRetorno']; ?> <i class="bi bi-patch-exclamation text-danger"></i>
+                    </div>
         		<?php endif; ?>
+
+                <?php if(isset($viewData['statusRetorno']) && $viewData['statusRetorno'] == '1'):?>
+                    <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+                        <?= $viewData['textoRetorno']; ?> <i class="bi bi-patch-check text-success"></i>
+                    </div>
+                <?php endif; ?>
         	</form>
         </main>
     </body>

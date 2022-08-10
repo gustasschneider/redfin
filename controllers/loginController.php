@@ -11,10 +11,12 @@ class loginController extends controller {
 			$u = new Users();
 
 			if($u->doLogin($email, $pass)) {
-				header("Location: ".BASE_URL);
-				exit;
+				$data['textoRetorno'] = 'Sucesso, vamos entrar!';
+				$data['statusRetorno'] = '1';
+                header("Location: ".BASE_URL);
 			} else {
-				$data['error'] = 'E-mail e/ou senha errados.';
+				$data['textoRetorno'] = 'E-mail e/ou senha errados.';
+				$data['statusRetorno'] = '0';
 			}
 		}
 
